@@ -1,0 +1,12 @@
+{
+  "name": "estudo-interativo-escolar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plataforma escolar com Tutor IA via Groq API",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

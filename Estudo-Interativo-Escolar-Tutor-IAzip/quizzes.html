@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quizzes | Estudo Interativo Escolar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <div class="logo-icon">📱</div>
+
+                <div>
+                    <strong>Estudo Interativo</strong>
+                    <span>Escolar</span>
+                </div>
+            </a>
+
+            <nav class="nav">
+                <a href="index.html">Início</a>
+                <a href="materias.html">Matérias</a>
+                <a href="quizzes.html" class="active">Quizzes</a>
+                <a href="simuladores.html">Simuladores</a>
+                <a href="videos.html">Vídeos</a>
+                <a href="materiais.html">Materiais</a>
+                <a href="ia.html" class="nav-ai">Tutor IA</a>
+            </nav>
+
+            <button
+                id="theme-toggle"
+                class="theme-toggle"
+                aria-label="Ativar modo escuro"
+                title="Alternar modo escuro"
+            >
+                🌙
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
+    <main>
+
+        <!-- HERO -->
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="section-label">QUIZZES</span>
+
+                <h1>Teste seus conhecimentos</h1>
+
+                <p>
+                    Escolha uma matéria e responda questões para
+                    revisar os conteúdos estudados.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ESCOLHA DA MATÉRIA
+        ========================== -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">ESCOLHA UMA MATÉRIA</span>
+
+                        <h2>Por onde você quer começar?</h2>
+
+                        <p>
+                            Selecione uma das matérias disponíveis.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="quiz-subjects">
+
+                    <button
+                        class="quiz-subject active"
+                        data-subject="matematica"
+                    >
+                        <span>🔢</span>
+                        <strong>Matemática</strong>
+                    </button>
+
+                    <button
+                        class="quiz-subject"
+                        data-subject="fisica"
+                    >
+                        <span>⚡</span>
+                        <strong>Física</strong>
+                    </button>
+
+                    <button
+                        class="quiz-subject"
+                        data-subject="quimica"
+                    >
+                        <span>🧪</span>
+                        <strong>Química</strong>
+                    </button>
+
+                    <button
+                        class="quiz-subject"
+                        data-subject="biologia"
+                    >
+                        <span>🧬</span>
+                        <strong>Biologia</strong>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             QUIZ
+        ========================== -->
+        <section class="section quiz-section">
+
+            <div class="container">
+
+                <div class="quiz-container">
+
+                    <!-- Cabeçalho do quiz -->
+                    <div class="quiz-header">
+
+                        <div>
+                            <span class="section-label">
+                                MATEMÁTICA
+                            </span>
+
+                            <h2 id="quiz-title">
+                                Quiz de Matemática
+                            </h2>
+                        </div>
+
+                        <div class="quiz-score">
+                            Pontuação:
+                            <strong id="score">0</strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Barra de progresso -->
+                    <div class="quiz-progress">
+
+                        <div
+                            class="quiz-progress-bar"
+                            id="progress-bar"
+                        ></div>
+
+                    </div>
+
+
+                    <p class="quiz-progress-text">
+                        Questão
+                        <strong id="question-number">1</strong>
+                        de
+                        <strong id="total-questions">3</strong>
+                    </p>
+
+
+                    <!-- Pergunta -->
+                    <div class="quiz-question">
+
+                        <h3 id="question">
+                            Quanto é 2 + 2?
+                        </h3>
+
+                        <div
+                            class="quiz-options"
+                            id="options"
+                        >
+
+                            <button class="quiz-option">
+                                3
+                            </button>
+
+                            <button class="quiz-option">
+                                4
+                            </button>
+
+                            <button class="quiz-option">
+                                5
+                            </button>
+
+                            <button class="quiz-option">
+                                6
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feedback -->
+                    <div
+                        class="quiz-feedback"
+                        id="feedback"
+                    ></div>
+
+
+                    <!-- Botão -->
+                    <button
+                        class="btn btn-primary quiz-next"
+                        id="next-button"
+                    >
+                        Próxima questão
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+
+                    <div class="logo">
+                        <div class="logo-icon">📱</div>
+
+                        <div>
+                            <strong>Estudo Interativo</strong>
+                            <span>Escolar</span>
+                        </div>
+                    </div>
+
+                    <p>
+                        Plataforma digital de apoio à aprendizagem
+                        no Ensino Médio.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <div>
+                        <h4>Plataforma</h4>
+
+                        <a href="index.html">Início</a>
+                        <a href="materias.html">Matérias</a>
+                        <a href="quizzes.html" class="active">Quizzes</a>
+                        <a href="simuladores.html">Simuladores</a>
+                    </div>
+
+
+                    <div>
+                        <h4>Recursos</h4>
+
+                        <a href="videos.html">Vídeos</a>
+                        <a href="materiais.html">Materiais</a>
+                        <a href="ia.html">Tutor IA</a>
+                        <a href="sobre.html">Sobre o projeto</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Estudo Interativo Escolar.
+                    Projeto de iniciação científica.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/quizzes.js"></script>
+
+</body>
+
+</html>

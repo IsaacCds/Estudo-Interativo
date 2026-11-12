@@ -1,0 +1,488 @@
+/* =========================================
+   SOBRE O PROJETO
+========================================= */
+
+.about-intro {
+    padding-top: 50px;
+}
+
+
+/* =========================================
+   INTRODUÇÃO
+========================================= */
+
+.about-main-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text h2 {
+    margin: 10px 0 20px;
+
+    font-size: 34px;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+.about-text p {
+    margin: 0 0 16px;
+
+    color: var(--text-light);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   DESTAQUE
+========================================= */
+
+.about-highlight {
+    padding: 32px;
+
+    background: var(--primary-light);
+
+    border: 1px solid #dbeafe;
+    border-radius: 22px;
+
+    text-align: center;
+}
+
+.about-highlight-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    border-radius: 20px;
+
+    font-size: 34px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.about-highlight h3 {
+    margin: 0 0 10px;
+
+    font-size: 22px;
+
+    color: var(--text);
+}
+
+.about-highlight p {
+    margin: 0;
+
+    color: var(--text-light);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   OBJETIVO
+========================================= */
+
+.about-objective {
+    padding-top: 40px;
+}
+
+.objective-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    max-width: 900px;
+
+    margin: 0 auto 28px;
+
+    padding: 28px;
+
+    background: var(--primary-light);
+
+    border: 1px solid #dbeafe;
+    border-radius: 20px;
+}
+
+.objective-icon {
+    width: 60px;
+    height: 60px;
+
+    min-width: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    border-radius: 16px;
+
+    font-size: 28px;
+}
+
+.objective-box h3 {
+    margin: 0 0 7px;
+
+    color: var(--text);
+
+    font-size: 20px;
+}
+
+.objective-box p {
+    margin: 0;
+
+    color: var(--text-light);
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   OBJETIVOS ESPECÍFICOS
+========================================= */
+
+.objectives-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.objective-card {
+    padding: 26px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.objective-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow);
+}
+
+.objective-card-icon {
+    display: flex;
+
+    width: 54px;
+    height: 54px;
+
+    margin: 0 auto 15px;
+
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary-light);
+
+    border-radius: 15px;
+
+    font-size: 25px;
+}
+
+.objective-card h3 {
+    margin: 0 0 8px;
+
+    color: var(--text);
+
+    font-size: 18px;
+}
+
+.objective-card p {
+    margin: 0;
+
+    color: var(--text-light);
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   RECURSOS
+========================================= */
+
+.about-resources {
+    padding-top: 50px;
+}
+
+.about-resources-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.about-resource {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 22px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.about-resource-icon {
+    width: 54px;
+    height: 54px;
+
+    min-width: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary-light);
+
+    border-radius: 14px;
+
+    font-size: 25px;
+}
+
+.about-resource h3 {
+    margin: 0 0 5px;
+
+    color: var(--text);
+
+    font-size: 18px;
+}
+
+.about-resource p {
+    margin: 0;
+
+    color: var(--text-light);
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   METODOLOGIA
+========================================= */
+
+.about-method {
+    padding-top: 40px;
+}
+
+.about-method-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+
+    padding: 32px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 22px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.about-method-icon {
+    width: 64px;
+    height: 64px;
+
+    min-width: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary-light);
+
+    border-radius: 17px;
+
+    font-size: 30px;
+}
+
+.about-method-box h2 {
+    margin: 8px 0 14px;
+
+    color: var(--text);
+
+    font-size: 26px;
+}
+
+.about-method-box p {
+    margin: 0 0 12px;
+
+    color: var(--text-light);
+
+    line-height: 1.7;
+}
+
+.about-method-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   PRÓXIMOS PASSOS
+========================================= */
+
+.about-future {
+    padding-top: 40px;
+}
+
+.future-list {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    display: grid;
+    gap: 12px;
+}
+
+.future-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 16px 20px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.future-item span {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--primary-light);
+
+    color: var(--primary);
+
+    font-weight: 700;
+}
+
+.future-item p {
+    margin: 0;
+
+    color: var(--text);
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   MODO ESCURO
+========================================= */
+
+body.dark-mode .about-highlight,
+body.dark-mode .objective-box {
+    background: rgba(37, 99, 235, 0.10);
+
+    border-color: #1e40af;
+}
+
+body.dark-mode .about-highlight-icon,
+body.dark-mode .objective-icon {
+    background: #1e293b;
+}
+
+body.dark-mode .about-text h2,
+body.dark-mode .about-highlight h3,
+body.dark-mode .objective-box h3,
+body.dark-mode .objective-card h3,
+body.dark-mode .about-resource h3,
+body.dark-mode .about-method-box h2 {
+    color: #f8fafc;
+}
+
+body.dark-mode .objective-card,
+body.dark-mode .about-resource,
+body.dark-mode .about-method-box,
+body.dark-mode .future-item {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-mode .about-resource-icon,
+body.dark-mode .objective-card-icon,
+body.dark-mode .about-method-icon {
+    background: rgba(37, 99, 235, 0.15);
+}
+
+body.dark-mode .future-item span {
+    background: rgba(37, 99, 235, 0.15);
+    color: #60a5fa;
+}
+
+body.dark-mode .future-item p {
+    color: #e2e8f0;
+}
+
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 850px) {
+
+    .about-main-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .objectives-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .objective-box {
+        align-items: flex-start;
+        padding: 22px;
+    }
+
+    .about-method-box {
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .about-highlight {
+        padding: 25px;
+    }
+
+}

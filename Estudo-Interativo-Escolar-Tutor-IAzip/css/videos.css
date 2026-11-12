@@ -1,0 +1,519 @@
+/* =========================================
+   PÁGINA DE VÍDEOS
+   BASEADA NA PRIMEIRA VERSÃO
+========================================= */
+
+
+/* =========================================
+   IDENTIFICAÇÃO DA PÁGINA
+========================================= */
+
+.video-page-label {
+
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: var(--primary);
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+
+}
+
+
+/* =========================================
+   SEÇÕES DE VÍDEOS
+========================================= */
+
+.video-subject {
+
+  margin-top: 65px;
+
+}
+
+
+.video-subject:first-child {
+
+  margin-top: 0;
+
+}
+
+
+/* =========================================
+   TÍTULO DA MATÉRIA
+========================================= */
+
+.video-subject-title {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 28px;
+
+}
+
+
+.video-subject-title .resource-icon {
+
+  flex-shrink: 0;
+
+  margin-bottom: 0;
+
+}
+
+
+.video-subject-title h2 {
+
+  color: var(--text);
+
+  font-size: 27px;
+
+  margin-bottom: 5px;
+
+}
+
+
+.video-subject-title p {
+
+  color: var(--text-light);
+
+  font-size: 14px;
+
+  margin: 0;
+
+}
+
+
+/* =========================================
+   GRID DOS VÍDEOS
+========================================= */
+
+.video-grid {
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 22px;
+
+}
+
+
+/* =========================================
+   CARD DO VÍDEO
+========================================= */
+
+.video-card {
+
+  padding: 0;
+
+  min-height: auto;
+
+  overflow: hidden;
+
+}
+
+
+/* =========================================
+   VÍDEO
+========================================= */
+
+.video-wrapper {
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  background: #000;
+
+  overflow: hidden;
+
+}
+
+
+.video-wrapper iframe {
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  border: 0;
+
+}
+
+
+/* =========================================
+   CONTEÚDO DO CARD
+========================================= */
+
+.video-card-content {
+
+  padding: 24px;
+
+}
+
+
+.video-card-content h3 {
+
+  color: var(--text);
+
+  font-size: 19px;
+
+  line-height: 1.4;
+
+  margin-top: 11px;
+
+  margin-bottom: 8px;
+
+}
+
+
+.video-card-content p {
+
+  color: var(--text-light);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  margin-bottom: 18px;
+
+}
+
+
+/* =========================================
+   TAG
+========================================= */
+
+.resource-tag {
+
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  background: var(--primary-light);
+
+  color: var(--primary);
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+}
+
+
+/* =========================================
+   LINK DO YOUTUBE
+========================================= */
+
+.video-card-content .text-link {
+
+  display: inline-block;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+}
+
+
+/* =========================================
+   KHAN ACADEMY
+========================================= */
+
+.study-section {
+
+  margin-top: 75px;
+
+  background: #f1f5f9;
+
+}
+
+
+.study-box {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 18px;
+
+}
+
+
+.study-item {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 20px;
+
+  min-height: 90px;
+
+  box-sizing: border-box;
+
+  background: var(--white);
+
+  border: 1px solid var(--border);
+
+  border-radius: 16px;
+
+  color: var(--text);
+
+  text-decoration: none;
+
+  box-shadow: var(--shadow-sm);
+
+  transition: 0.3s ease;
+
+}
+
+
+.study-item:hover {
+
+  transform: translateY(-4px);
+
+  border-color: #93c5fd;
+
+  box-shadow: var(--shadow);
+
+}
+
+
+.study-item > span {
+
+  width: 42px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: var(--primary-light);
+
+  font-size: 20px;
+
+}
+
+
+.study-item div {
+
+  flex: 1;
+
+}
+
+
+.study-item strong {
+
+  display: block;
+
+  color: var(--text);
+
+  font-size: 14px;
+
+  margin-bottom: 4px;
+
+}
+
+
+.study-item small {
+
+  display: block;
+
+  color: var(--text-light);
+
+  font-size: 11px;
+
+}
+
+
+.study-item b {
+
+  color: var(--primary);
+
+  font-size: 18px;
+
+}
+
+
+/* =========================================
+   MODO ESCURO
+========================================= */
+
+body.dark-mode .video-page-label {
+
+  color: #60a5fa;
+
+}
+
+
+body.dark-mode .video-subject-title h2 {
+
+  color: #f8fafc;
+
+}
+
+
+body.dark-mode .video-subject-title p {
+
+  color: #94a3b8;
+
+}
+
+
+body.dark-mode .video-card-content h3 {
+
+  color: #f8fafc;
+
+}
+
+
+body.dark-mode .video-card-content p {
+
+  color: #94a3b8;
+
+}
+
+
+body.dark-mode .resource-tag {
+
+  background: rgba(37, 99, 235, 0.15);
+
+  color: #60a5fa;
+
+}
+
+
+body.dark-mode .study-section {
+
+  background: #020617;
+
+}
+
+
+body.dark-mode .study-item {
+
+  background: #1e293b;
+
+  border-color: #334155;
+
+}
+
+
+body.dark-mode .study-item:hover {
+
+  background: #172033;
+
+  border-color: #3b82f6;
+
+}
+
+
+body.dark-mode .study-item strong {
+
+  color: #f8fafc;
+
+}
+
+
+body.dark-mode .study-item small {
+
+  color: #94a3b8;
+
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .study-box {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .video-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .video-subject {
+
+    margin-top: 50px;
+
+  }
+
+
+  .video-subject-title {
+
+    align-items: flex-start;
+
+  }
+
+
+  .video-subject-title h2 {
+
+    font-size: 23px;
+
+  }
+
+
+  .video-card-content {
+
+    padding: 20px;
+
+  }
+
+
+  .study-box {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
+/* =========================================
+   PADRONIZAÇÃO DO BOTÃO DE TEMA
+========================================= */
+
+.header .theme-toggle {
+  align-self: center;
+  margin: 0;
+  transform: none;
+}

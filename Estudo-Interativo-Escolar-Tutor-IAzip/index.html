@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Estudo Interativo Escolar</title>
+
+  <meta
+    name="description"
+    content="Plataforma digital de apoio aos estudos para estudantes do Ensino Médio."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       CABEÇALHO
+  ========================== -->
+
+  <header class="header">
+
+    <div class="container header-content">
+
+      <a href="index.html" class="logo">
+        <span class="logo-icon">📱</span>
+
+        <div>
+          <strong>Estudo Interativo</strong>
+          <span>Escolar</span>
+        </div>
+      </a>
+
+
+      <nav class="nav" aria-label="Navegação principal">
+
+        <a href="index.html" class="active">Início</a>
+
+        <a href="materias.html">Matérias</a>
+
+        <a href="quizzes.html">Quizzes</a>
+
+        <a href="simuladores.html">Simuladores</a>
+
+        <a href="videos.html">Vídeos</a>
+
+        <a href="materiais.html">Materiais</a>
+
+        <a href="ia.html" class="nav-ai">
+          🤖 Tutor IA
+        </a>
+
+      </nav>
+
+
+      <!-- BOTÃO MODO ESCURO -->
+
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        aria-label="Ativar modo escuro"
+        title="Alternar modo escuro"
+      >
+        🌙
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       CONTEÚDO PRINCIPAL
+  ========================== -->
+
+  <main>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+      <div class="container hero-content">
+
+        <div class="hero-text">
+
+          <span class="hero-label">
+            📚 PLATAFORMA DE APOIO À APRENDIZAGEM
+          </span>
+
+
+          <h1>
+            Aprenda.
+            <span>Pratique.</span>
+            Evolua.
+          </h1>
+
+
+          <p>
+            O <strong>Estudo Interativo Escolar</strong> reúne
+            diferentes recursos para ajudar estudantes do Ensino
+            Médio a estudar de forma mais dinâmica usando o
+            próprio celular.
+          </p>
+
+
+          <div class="hero-buttons">
+
+            <a
+              href="materias.html"
+              class="btn btn-primary"
+            >
+              Começar a estudar →
+            </a>
+
+
+            <a
+              href="#recursos"
+              class="btn btn-secondary"
+            >
+              Conhecer a plataforma
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- CELULAR ILUSTRATIVO -->
+
+        <div class="hero-visual">
+
+          <div class="phone">
+
+            <div class="phone-top"></div>
+
+
+            <div class="phone-screen">
+
+              <div class="phone-header">
+
+                <span>
+                  Estudo Interativo
+                </span>
+
+                <span>
+                  ☰
+                </span>
+
+              </div>
+
+
+              <div class="phone-welcome">
+
+                <small>
+                  Olá! 👋
+                </small>
+
+                <strong>
+                  O que você quer<br>
+                  estudar hoje?
+                </strong>
+
+              </div>
+
+
+              <div class="phone-cards">
+
+                <div class="mini-card">
+
+                  <span>➗</span>
+
+                  <small>
+                    Matemática
+                  </small>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                  <span>⚛️</span>
+
+                  <small>
+                    Física
+                  </small>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                  <span>🧪</span>
+
+                  <small>
+                    Química
+                  </small>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                  <span>🧬</span>
+
+                  <small>
+                    Biologia
+                  </small>
+
+                </div>
+
+              </div>
+
+
+              <div class="phone-quiz">
+
+                <span>
+                  📝
+                </span>
+
+
+                <div>
+
+                  <small>
+                    Quiz recomendado
+                  </small>
+
+                  <strong>
+                    Teste seus conhecimentos!
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MATÉRIAS
+    ========================== -->
+
+    <section class="section subjects-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-label">
+              📚 ESTUDE
+            </span>
+
+            <h2>
+              Escolha uma matéria
+            </h2>
+
+          </div>
+
+
+          <a
+            href="materias.html"
+            class="see-more"
+          >
+            Ver todas →
+          </a>
+
+        </div>
+
+
+        <div class="subjects-grid">
+
+
+          <!-- MATEMÁTICA -->
+
+          <a
+            href="materias/matematica.html"
+            class="subject-card math"
+          >
+
+            <div class="subject-icon">
+              ➗
+            </div>
+
+
+            <div>
+
+              <h3>
+                Matemática
+              </h3>
+
+              <p>
+                Exercícios, conteúdos e quizzes.
+              </p>
+
+            </div>
+
+
+            <span class="card-arrow">
+              →
+            </span>
+
+          </a>
+
+
+
+          <!-- FÍSICA -->
+
+          <a
+            href="materias/fisica.html"
+            class="subject-card physics"
+          >
+
+            <div class="subject-icon">
+              ⚛️
+            </div>
+
+
+            <div>
+
+              <h3>
+                Física
+              </h3>
+
+              <p>
+                Conceitos, simuladores e exercícios.
+              </p>
+
+            </div>
+
+
+            <span class="card-arrow">
+              →
+            </span>
+
+          </a>
+
+
+
+          <!-- QUÍMICA -->
+
+          <a
+            href="materias/quimica.html"
+            class="subject-card chemistry"
+          >
+
+            <div class="subject-icon">
+              🧪
+            </div>
+
+
+            <div>
+
+              <h3>
+                Química
+              </h3>
+
+              <p>
+                Conteúdos e atividades interativas.
+              </p>
+
+            </div>
+
+
+            <span class="card-arrow">
+              →
+            </span>
+
+          </a>
+
+
+
+          <!-- BIOLOGIA -->
+
+          <a
+            href="materias/biologia.html"
+            class="subject-card biology"
+          >
+
+            <div class="subject-icon">
+              🧬
+            </div>
+
+
+            <div>
+
+              <h3>
+                Biologia
+              </h3>
+
+              <p>
+                Resumos, vídeos e quizzes.
+              </p>
+
+            </div>
+
+
+            <span class="card-arrow">
+              →
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RECURSOS
+    ========================== -->
+
+    <section
+      class="section resources-section"
+      id="recursos"
+    >
+
+      <div class="container">
+
+        <div class="section-heading centered">
+
+          <span class="section-label">
+            🚀 APRENDIZAGEM
+          </span>
+
+          <h2>
+            Recursos para estudar
+          </h2>
+
+          <p>
+            Encontre diferentes formas de revisar e praticar
+            os conteúdos escolares.
+          </p>
+
+        </div>
+
+
+        <div class="resources-grid">
+
+
+          <!-- QUIZZES -->
+
+          <a
+            href="quizzes.html"
+            class="resource-card"
+          >
+
+            <div class="resource-icon quiz-icon">
+              📝
+            </div>
+
+            <h3>
+              Quizzes
+            </h3>
+
+            <p>
+              Teste seus conhecimentos com perguntas
+              e descubra seu desempenho.
+            </p>
+
+            <span>
+              Acessar quizzes →
+            </span>
+
+          </a>
+
+
+
+          <!-- SIMULADORES -->
+
+          <a
+            href="simuladores.html"
+            class="resource-card"
+          >
+
+            <div class="resource-icon simulator-icon">
+              🔬
+            </div>
+
+            <h3>
+              Simuladores
+            </h3>
+
+            <p>
+              Explore conceitos científicos através
+              de simulações interativas.
+            </p>
+
+            <span>
+              Explorar simuladores →
+            </span>
+
+          </a>
+
+
+
+          <!-- VÍDEOS -->
+
+          <a
+            href="videos.html"
+            class="resource-card"
+          >
+
+            <div class="resource-icon video-icon">
+              🎥
+            </div>
+
+            <h3>
+              Vídeos
+            </h3>
+
+            <p>
+              Assista a explicações e aulas selecionadas
+              para auxiliar seus estudos.
+            </p>
+
+            <span>
+              Ver vídeos →
+            </span>
+
+          </a>
+
+
+
+          <!-- MATERIAIS -->
+
+          <a
+            href="materiais.html"
+            class="resource-card"
+          >
+
+            <div class="resource-icon material-icon">
+              📄
+            </div>
+
+            <h3>
+              Materiais
+            </h3>
+
+            <p>
+              Acesse resumos e materiais de apoio
+              para revisar os conteúdos.
+            </p>
+
+            <span>
+              Ver materiais →
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         TUTOR IA
+    ========================== -->
+
+    <section class="ai-section">
+
+      <div class="container">
+
+        <div class="ai-box">
+
+
+          <div class="ai-content">
+
+            <span class="section-label ai-label">
+              🤖 NOVO RECURSO
+            </span>
+
+
+            <h2>
+              Conheça o
+              <span>Tutor IA</span>
+            </h2>
+
+
+            <p>
+              Um assistente pensado para ajudar nos estudos,
+              explicar conteúdos, criar exercícios e tirar dúvidas
+              de forma interativa.
+            </p>
+
+
+            <a
+              href="ia.html"
+              class="btn btn-ai"
+            >
+              Conhecer o Tutor IA →
+            </a>
+
+          </div>
+
+
+
+          <div class="ai-visual">
+
+            <div class="ai-orb">
+              🤖
+            </div>
+
+
+            <div class="ai-message message-one">
+              💡 Explique de outro jeito
+            </div>
+
+
+            <div class="ai-message message-two">
+              📝 Crie um exercício
+            </div>
+
+
+            <div class="ai-message message-three">
+              📚 Tire uma dúvida
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SOBRE O PROJETO
+    ========================== -->
+
+    <section class="section about-section">
+
+      <div class="container about-content">
+
+
+        <div class="about-text">
+
+          <span class="section-label">
+            📱 SOBRE O PROJETO
+          </span>
+
+
+          <h2>
+            Seu celular também pode
+            ser uma ferramenta de estudo.
+          </h2>
+
+
+          <p>
+            O Estudo Interativo Escolar foi desenvolvido como uma
+            proposta de apoio à aprendizagem para estudantes do
+            Ensino Médio.
+          </p>
+
+
+          <p>
+            A plataforma reúne diferentes recursos educacionais
+            em um único ambiente, buscando tornar o estudo mais
+            acessível, dinâmico e interativo.
+          </p>
+
+
+          <a
+            href="sobre.html"
+            class="text-link"
+          >
+            Saiba mais sobre o projeto →
+          </a>
+
+        </div>
+
+
+
+        <div class="about-stats">
+
+
+          <div class="stat-card">
+
+            <strong>
+              4
+            </strong>
+
+            <span>
+              Matérias iniciais
+            </span>
+
+          </div>
+
+
+          <div class="stat-card">
+
+            <strong>
+              4
+            </strong>
+
+            <span>
+              Tipos de recursos
+            </span>
+
+          </div>
+
+
+          <div class="stat-card">
+
+            <strong>
+              📱
+            </strong>
+
+            <span>
+              Acesso pelo celular
+            </span>
+
+          </div>
+
+
+          <div class="stat-card">
+
+            <strong>
+              🤖
+            </strong>
+
+            <span>
+              Tutor IA
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       RODAPÉ
+  ========================== -->
+
+  <footer class="footer">
+
+    <div class="container footer-content">
+
+
+      <div class="footer-brand">
+
+        <a
+          href="index.html"
+          class="logo"
+        >
+
+          <span class="logo-icon">
+            📱
+          </span>
+
+          <div>
+
+            <strong>
+              Estudo Interativo
+            </strong>
+
+            <span>
+              Escolar
+            </span>
+
+          </div>
+
+        </a>
+
+
+        <p>
+          Plataforma digital de apoio à aprendizagem
+          no Ensino Médio.
+        </p>
+
+      </div>
+
+
+
+      <div class="footer-links">
+
+
+        <div>
+
+          <h4>
+            Plataforma
+          </h4>
+
+          <a href="materias.html">
+            Matérias
+          </a>
+
+          <a href="quizzes.html">
+            Quizzes
+          </a>
+
+          <a href="simuladores.html">
+            Simuladores
+          </a>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Recursos
+          </h4>
+
+          <a href="videos.html">
+            Vídeos
+          </a>
+
+          <a href="materiais.html">
+            Materiais
+          </a>
+
+          <a href="ia.html">
+            Tutor IA
+          </a>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Projeto
+          </h4>
+
+          <a href="sobre.html">
+            Sobre
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Estudo Interativo Escolar •
+        Criado por estudantes para estudantes.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- JAVASCRIPT -->
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

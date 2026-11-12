@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tutor IA | Estudo Interativo Escolar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ia.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+
+    <header class="header">
+
+      <div class="container header-content">
+
+        <a href="index.html" class="logo">
+          <span class="logo-icon">📱</span>
+
+          <div>
+            <strong>Estudo Interativo</strong>
+            <span>Escolar</span>
+          </div>
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+
+          <a href="index.html">Início</a>
+
+          <a href="materias.html">Matérias</a>
+
+          <a href="quizzes.html">Quizzes</a>
+
+          <a href="simuladores.html">Simuladores</a>
+
+          <a href="videos.html">Vídeos</a>
+
+          <a href="materiais.html">Materiais</a>
+
+          <a href="ia.html" class="active""nav-ai">
+            🤖 Tutor IA
+          </a>
+            
+        </nav>
+
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Ativar modo escuro"
+          title="Alternar modo escuro"
+        >
+          🌙
+        </button>
+
+      </div>
+
+    </header>
+
+
+    <!-- ================= CONTEÚDO ================= -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="page-hero ia-page-hero">
+
+            <div class="container">
+
+                <span class="page-hero-label">
+                    🤖 Tutor IA
+                </span>
+
+                <h1>
+                    Seu apoio para
+                    <span>estudar</span>
+                </h1>
+
+                <p>
+                    Tire dúvidas, peça explicações e utilize a tecnologia
+                    como apoio durante seus estudos.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- TUTOR -->
+
+        <section class="section ia-section">
+
+            <div class="container">
+
+                <div class="ia-container">
+
+                    <!-- CABEÇALHO DO TUTOR -->
+
+                    <div class="ia-header">
+
+                        <div class="ia-avatar">
+                            🤖
+                        </div>
+
+                        <div>
+
+                            <span class="ia-status">
+                                ● Tutor de estudos
+                            </span>
+
+                            <h2>
+                                Como posso ajudar?
+                            </h2>
+
+                            <p>
+                                Escreva uma dúvida ou peça uma explicação
+                                sobre um conteúdo escolar.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ÁREA DA CONVERSA -->
+
+                    <div class="ia-chat">
+
+                        <div class="ia-message ia-message-bot">
+
+                            <div class="ia-message-avatar">
+                                🤖
+                            </div>
+
+                            <div class="ia-message-content">
+
+                                <strong>
+                                    Tutor IA
+                                </strong>
+
+                                <p>
+                                    Olá! 👋 Sou o Tutor IA do
+                                    Estudo Interativo Escolar.
+                                    Posso ajudar você a estudar e
+                                    entender melhor os conteúdos.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ia-example">
+
+                            <span>💡</span>
+
+                            <div>
+                                <strong>Exemplo</strong>
+
+                                <p>
+                                    "Explique de forma simples o que
+                                    são números complexos."
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SUGESTÕES -->
+
+                    <div class="ia-suggestions">
+
+                        <span class="ia-suggestions-title">
+                            Experimente perguntar:
+                        </span>
+
+                        <div class="ia-suggestion-list">
+
+                            <button type="button" data-question="Explique um conteúdo de Matemática com um exemplo.">
+                                📐 Explique um conteúdo de Matemática
+                            </button>
+
+                            <button type="button" data-question="Tenho uma dúvida de Física. Explique o conceito e dê um exemplo.">
+                                ⚡ Tenho uma dúvida de Física
+                            </button>
+
+                            <button type="button" data-question="Me ajude a entender um conteúdo de Química com um exemplo.">
+                                🧪 Me ajude em Química
+                            </button>
+
+                            <button type="button" data-question="Explique um conteúdo de Biologia de forma simples.">
+                                🧬 Explique um conteúdo de Biologia
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CAMPO DE PERGUNTA -->
+
+                    <div class="ia-input-area">
+
+                        <textarea
+                            id="ia-question"
+                            placeholder="Digite sua dúvida aqui..."
+                            rows="3"
+                        ></textarea>
+
+                        <div class="ia-input-footer">
+
+                            <span id="ia-status-message" role="status" aria-live="polite">
+                                💬 Faça uma pergunta sobre seus estudos
+                            </span>
+
+                            <button
+                                type="button"
+                                class="ia-send-button"
+                                id="ia-send"
+                            >
+                                Enviar
+                                <span>➜</span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- AVISO -->
+
+                    <div class="ia-notice" id="ia-notice" aria-live="polite">
+
+                        <span>ℹ️</span>
+
+                        <p>
+                            O Tutor IA usa uma conexão segura com um serviço de IA. Não envie dados pessoais, senhas ou informações privadas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMO FUNCIONA -->
+
+        <section class="section ia-how-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        💡 Como funciona
+                    </span>
+
+                    <h2>
+                        Um apoio para seus estudos
+                    </h2>
+
+                    <p>
+                        A proposta do Tutor IA é ajudar o estudante
+                        durante o processo de aprendizagem.
+                    </p>
+
+                </div>
+
+
+                <div class="ia-features">
+
+                    <div class="ia-feature">
+
+                        <div class="ia-feature-icon">
+                            ❓
+                        </div>
+
+                        <h3>
+                            Tire dúvidas
+                        </h3>
+
+                        <p>
+                            Faça perguntas sobre os conteúdos
+                            estudados.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ia-feature">
+
+                        <div class="ia-feature-icon">
+                            💡
+                        </div>
+
+                        <h3>
+                            Entenda melhor
+                        </h3>
+
+                        <p>
+                            Receba explicações que podem auxiliar
+                            na compreensão dos conteúdos.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ia-feature">
+
+                        <div class="ia-feature-icon">
+                            📚
+                        </div>
+
+                        <h3>
+                            Continue estudando
+                        </h3>
+
+                        <p>
+                            Use o Tutor junto com os outros recursos
+                            disponíveis na plataforma.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+
+          <div class="footer-brand">
+
+            <a
+              href="index.html"
+              class="logo"
+            >
+
+              <span class="logo-icon">
+                📱
+              </span>
+
+              <div>
+
+                <strong>
+                  Estudo Interativo
+                </strong>
+
+                <span>
+                  Escolar
+                </span>
+
+              </div>
+
+            </a>
+
+
+            <p>
+              Plataforma digital de apoio à aprendizagem
+              no Ensino Médio.
+            </p>
+
+          </div>
+
+
+
+          <div class="footer-links">
+
+
+            <div>
+
+              <h4>
+                Plataforma
+              </h4>
+
+              <a href="materias.html">
+                Matérias
+              </a>
+
+              <a href="quizzes.html">
+                Quizzes
+              </a>
+
+              <a href="simuladores.html">
+                Simuladores
+              </a>
+
+            </div>
+
+
+            <div>
+
+              <h4>
+                Recursos
+              </h4>
+
+              <a href="videos.html">
+                Vídeos
+              </a>
+
+              <a href="materiais.html">
+                Materiais
+              </a>
+
+              <a href="ia.html">
+                Tutor IA
+              </a>
+
+            </div>
+
+
+            <div>
+
+              <h4>
+                Projeto
+              </h4>
+
+              <a href="sobre.html">
+                Sobre
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+          <p>
+            © 2026 Estudo Interativo Escolar •
+            Criado por estudantes para estudantes.
+          </p>
+
+        </div>
+
+      </footer>
+
+
+    <!-- ================= SCRIPT ================= -->
+
+    <!-- Formatação Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Sanitização do HTML gerado -->
+    <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+
+    <!-- Configuração do MathJax -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['\\(', '\\)']],
+          displayMath: [['\\[', '\\]']],
+          processEscapes: true
+        },
+        options: {
+          skipHtmlTags: [
+            'script', 'noscript', 'style', 'textarea', 'pre', 'code'
+          ]
+        }
+      };
+    </script>
+
+    <!-- Bibliotecas de formatação -->
+    <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Carregue cada arquivo apenas uma vez -->
+    <script src="js/script.js"></script>
+    <script src="js/ia.js"></script>
+
+</body>
+</html>
